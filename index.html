@@ -4,81 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gopinath's DevOps Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #121212;
-            color: #ffffff;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #1f1f1f;
-            padding: 20px;
-            text-align: center;
-            font-size: 24px;
-            font-weight: bold;
-        }
-        nav {
-            text-align: center;
-            margin-top: 10px;
-        }
-        nav a {
-            color: #ffffff;
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 18px;
-        }
-        nav a:hover {
-            color: #00ffcc;
-        }
-        .container {
-            max-width: 800px;
-            margin: 50px auto;
-            padding: 20px;
-            text-align: center;
-        }
-        .projects {
-            margin-top: 30px;
-        }
-        .projects h2 {
-            border-bottom: 2px solid #00ffcc;
-            padding-bottom: 10px;
-        }
-        .project-card {
-            background-color: #222;
-            padding: 15px;
-            margin: 15px;
-            border-radius: 8px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-    <header>Gopinath's DevOps Portfolio</header>
+    <!-- Header -->
+    <header>
+        <h1>Gopinath's DevOps Portfolio</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">Projects</a>
-        <a href="#">Contact</a>
-    </nav>
+    <!-- Introduction Section -->
+    <section id="about">
+        <h2>👋 Hi, I'm <span class="typing"></span></h2>
+        <p>A passionate DevOps Engineer skilled in AWS, Docker, Kubernetes, and CI/CD pipelines.</p>
+        <a href="#projects" class="btn">View My Work</a>
+    </section>
 
-    <div class="container">
-        <h1>Welcome to My DevOps Portfolio</h1>
-        <p>I am a passionate DevOps Engineer skilled in AWS, Docker, Kubernetes, and CI/CD pipelines.</p>
-
-        <div class="projects">
-            <h2>Projects</h2>
-            <div class="project-card">
-                <h3>Cloud Security with AI</h3>
-                <p>Implemented AI-powered security measures to enhance cloud environments.</p>
-            </div>
-            <div class="project-card">
-                <h3>Medical Data Security</h3>
-                <p>Designed a secure data transmission model for wireless medical sensor networks.</p>
-            </div>
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>🚀 My Projects</h2>
+        <div class="project-card">
+            <h3>🔐 Cloud Security with AI</h3>
+            <p>Implemented AI-powered security measures to enhance cloud environments.</p>
         </div>
-    </div>
+        <div class="project-card">
+            <h3>📡 Medical Data Security</h3>
+            <p>Designed a secure data transmission model for wireless medical sensor networks.</p>
+        </div>
+    </section>
 
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>📩 Contact Me</h2>
+        <p>Email: gopi@example.com</p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/gopi4891" target="_blank">linkedin.com/in/gopi4891</a></p>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
