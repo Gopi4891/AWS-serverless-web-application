@@ -1,0 +1,18 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Resources:
+  S3Bucket:
+    Type: 'AWS::S3::Bucket'
+    Properties:
+      BucketName: 'serverless-app-bucket'
+  LambdaFunction:
+    Type: 'AWS::Lambda::Function'
+    Properties:
+      FunctionName: 'ServerlessAppLambda'
+      Runtime: 'nodejs18.x'
+      Handler: 'index.handler'
+      Code:
+        S3Bucket: !Ref S3Bucket
+  ApiGateway:
+    Type: 'AWS::ApiGateway::RestApi'
+    Properties:
+      Name: 'ServerlessAPI'
